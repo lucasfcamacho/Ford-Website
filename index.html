@@ -1,90 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 3 - Diseño Responsive</title>
+    <title>Clase 4 - Diseño Responsive</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-fluid p-0">
         <header class="encabezado">
-            <figure class="logo">
-                <img src="img/logo-ford.png" alt="Logo Ford">
-            </figure>
-            <div class="menu">
-                <nav class="menuIzquierdo">
-                    <ul class="opcionesIzquierda">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Vehículos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-                <nav class="menuDerecho">
-                    <ul class="opcionesDerecha">
-                        <li><a href="#">Cotización</a></li>
-                        <li><a href="#">Sucursales</a></li>
-                    </ul>
-                </nav>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a style="width: 10vw;" class="navbar-brand" href="#"><img width="100%" src="img/logo-ford.png"
+                            alt="logo-ford"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Historia</a></li>
+                                    <li><a class="dropdown-item" href="#">Misión</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Visión</a></li>
+                                    <li><a class="dropdown-item" href="#">Valores</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vehículos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </header>   
-        <section class="fondo">
-            
-        </section>  
-        <h1>Tenemos el vehículo adecuado para tu Familia</h1>
-        <section class="productos">
-            <article class="producto">
-                <img src="img/sel.webp" alt="Sel">
-                <h2>Sel</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestiae ea facere praesentium nesciunt pariatur, voluptatem optio minima tempora ut obcaecati numquam omnis excepturi dolores beatae perspiciatis natus animi hic.</p>
-                <h3>$9.800.000</h3>
-                <a href="#">Ver mas</a>
-            </article>
-            <article class="producto">
-                <img src="img/titanium.webp" alt="Titanium">
-                <h2>Titanium</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestiae ea facere praesentium nesciunt pariatur, voluptatem optio minima tempora ut obcaecati numquam omnis excepturi dolores beatae perspiciatis natus animi hic.</p>
-                <h3>$9.950.000</h3>
-                <a href="#">Ver mas</a>
-            </article>
-        </section>  
-        <h2>Galería</h2>
-        <section class="galeria">
-            <article class="imagenGaleria">
-                <img src="img/galeria1.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria2.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria3.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria4.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria5.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria6.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria7.webp" alt="Galería">
-            </article>
-            <article class="imagenGaleria">
-                <img src="img/galeria8.webp" alt="Galería">
-            </article>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel1.webp" class="d-block w-100" alt="vehículo ford">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel2.webp" class="d-block w-100" alt="vehículo ford">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel3.jpg" class="d-block w-100" alt="vehículo ford">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <h1 class="text-center display-5 pt-2">Tenemos el mejor vehículo para tu familia</h1>
+        <section class="row">
+            <div class="col-12 col-md-6 text-center">
+                <img src="img/sel.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sel</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title pb-2">Precio: $8.900.000</h5>
+                  <a href="#" class="btn btn-outline-primary">Ver más</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <img src="img/titanium.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Titanium</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title pb-2">Precio: $9.800.000</h5>
+                  <a href="#" class="btn btn-outline-primary">Ver más</a>
+                </div>
+              </div>
+              <div class="p-5 mt-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                  <h1 class="display-5 fw-bold">Modelos únicos</h1>
+                  <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                  <button class="btn btn-outline-primary btn-lg" type="button">Ver más</button>
+                </div>
+              </div>
         </section>
-        <footer class="piePagina">
-            <h4>Todos los derechos reservados</h4>
-            <div class="redes">
-                <a href="https://www.facebook.com">Facebook</a>
-                <a href="https://www.instagram.com">Instagram</a>
-            </div>
-        </footer>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/master.js"></script>
 </body>
+
 </html>
