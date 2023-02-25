@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 4 - Diseño Responsive</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 _divPrincipal">
         <header class="encabezado">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
@@ -48,74 +49,27 @@
                 </div>
             </nav>
         </header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel1.webp" class="d-block w-100" alt="vehículo ford">
+        <section class="_contactando text-center m-auto mt-5 mb-5 ">
+            <h1>Contacto</h1>
+            <form action="datos.php" method="post">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/carousel2.webp" class="d-block w-100" alt="vehículo ford">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/carousel3.jpg" class="d-block w-100" alt="vehículo ford">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-        <h1 class="text-center display-5 pt-2">Tenemos el mejor vehículo para tu familia</h1>
-        <section class="row">
-            <div class="col-12 col-md-6 text-center">
-                <img src="img/sel.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sel</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <h5 class="card-title pb-2">Precio: $8.900.000</h5>
-                    <a href="#" class="btn btn-outline-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-                <img src="img/titanium.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Titanium</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <h5 class="card-title pb-2">Precio: $9.800.000</h5>
-                    <a href="#" class="btn btn-outline-primary">Ver más</a>
-                </div>
-            </div>
-            <!--Jumbotron-->
-            <div class="p-5 mt-4 bg-light rounded-3">
-                <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Modelos únicos</h1>
-                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
-                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
-                        restyle it to your liking.</p>
-                    <button class="btn btn-outline-primary btn-lg" type="button">Ver más</button>
-                </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </section>
-        <!-- === Fin jumbotron ===-->
-
-        <!-- === Footer ===-->
-        <footer id="footer ">
+        
+        <footer id="footer">
             <div class="footer-top">
                 <div class="container-fluid _footer pt-2">
                     <div class="row">
@@ -153,9 +107,12 @@
                             <h4>Nuestras redes</h4>
                             <p>Mantente informado de todos los nuevos productos</p>
                             <div class="social-links mt-3">
-                                <a href="https://facebook.com" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 2rem; color: white"></i></a>
-                                <a href="https://instagram.com" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 2rem; color: white"></i></a>
-                                <a href="https://twitter.com" class="twitter" target="_blank"><i class="bi bi-twitter" style="font-size: 2rem; color: white"></i></a>
+                                <a href="https://facebook.com" class="facebook" target="_blank"><i
+                                        class="bi bi-facebook" style="font-size: 2rem; color: white"></i></a>
+                                <a href="https://instagram.com" class="instagram" target="_blank"><i
+                                        class="bi bi-instagram" style="font-size: 2rem; color: white"></i></a>
+                                <a href="httpss://twitter.com/home" class="twitter" target="_blank"><i
+                                        class="bi bi-twitter" style="font-size: 2rem; color: white"></i></a>
                             </div>
                         </div>
                     </div>
@@ -167,8 +124,9 @@
                     &copy; Copyright <strong><span>2023 Lucas Camacho</span></strong>. Todos los Derechos reservados
                 </div>
             </div>
+            
         </footer>
-        <!-- Fin del pie de página -->
+        
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/master.js"></script>

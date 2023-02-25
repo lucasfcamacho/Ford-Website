@@ -1,0 +1,21 @@
+
+/*=== Aplicando CSS al Footer ===*/
+._footer{
+    color: white;
+    background-color: blue;
+}
+ul.opcionesPrincipales li a,ul.opcionesSecundarias li a {
+    color: white;
+    text-decoration: none;
+}
+ul.opcionesPrincipales li a:hover,ul.opcionesSecundarias li a:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+._divPrincipal{
+    height: 700px;
+    
+}
+

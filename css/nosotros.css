@@ -1,0 +1,12 @@
+._sobreNosotros{
+    height: 120vh;
+    background-image: url('../img/banner-formulario.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+._fondo{
+    background-color: rgba(255, 255, 255, 0.5);
+}
