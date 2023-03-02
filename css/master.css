@@ -10,12 +10,20 @@ ul.opcionesPrincipales li a,ul.opcionesSecundarias li a {
 }
 ul.opcionesPrincipales li a:hover,ul.opcionesSecundarias li a:hover {
     text-decoration: underline;
-    text-transform: uppercase;
+    
     color: yellow;
 }
 
 ._divPrincipal{
     height: 700px;
     
+}
+
+
+#botonCarrusel{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    padding: 10px
 }
 
